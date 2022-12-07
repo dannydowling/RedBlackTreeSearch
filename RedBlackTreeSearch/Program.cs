@@ -6,7 +6,7 @@ namespace RedBlackTreeSearch
     {
 
         public static Treenode guard;
-
+        
         public static void LeftRotate(Treenode[] root, Treenode x)
         {
             Treenode y = x.right;
@@ -21,7 +21,7 @@ namespace RedBlackTreeSearch
 
             if (x.parent == guard) // if x was root now y is the root
             {
-                root[0].CopyFrom(y);
+               root[0].CopyFrom(y);
             }
             else if (x == x.parent.left) // if x was in the left of the parent
             {
